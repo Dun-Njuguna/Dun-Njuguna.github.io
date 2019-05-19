@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    color: #797979;
+}
+
+h1, h2 {
+    color: #484848;
+}
+
+h3 {
+    color: #797979;
+}
+
+.container {
+    padding: 8% 20%;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 12px 32px;
+    background: #117fb3;
+    color: white;
+    border-radius: 2px;
+}
+
+button:hover {
+    background: rgb(21, 143, 199);
+}
+
+button:active {
+    background: #117fb3;
+}
+
+/** HEADER **/
+body {
+    background: url('./background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#header {
+    background-size: 100%;
+    width: 100%;
+    height: 90%;
+}
+
+#header-mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6)
+}
+
+#header-content {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-content * {
+    color: white;
+}
+
+#header-content span {
+    display: block;
+}
+
+.salutation {
+    font-size: 14pt;
+}
+
+.job-title {
+    font-size: 30pt;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-weight: bold;
+}
+
+.small-description {
+    margin-bottom: 50px
+}
+
+/** NAV BAR*/
+#nav-bar {
+    height: 10%;
+    background: whitesmoke;
+    border-bottom: solid #dedede 0.5px;
+    color: #646464;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sticky-nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar-title {
+    flex: 1;
+    margin-left: 32px;
+    align-self: center;
+    font-weight: bold;
+    color: #484848;
+}
+
+.nav-container {
+    margin-right: 32px;
+}
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #484848;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #117fb3;
+}
+
+.nav-link-active {
+    color: #117fb3;
+}
+
+/** SECTIONS **/
+
+#about-me {
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me-image {
+    border-radius: 8px;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+.about-me-content {
+    flex: 1 1 auto;
+    margin-left: 32px;
+}
+
+.about-me-content h2 {
+    margin-top: 0;
+}
+
+#skills {
+    padding: 8% 20%;
+    background: whitesmoke;
+}
+
+.skills-content {
+    flex-direction: row;
+}
+
+.about-skills {
+    text-align: center;
+}
+
+.skill-legend {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.skill-legend li {
+    margin: 0px 4px;
+}
+
+
+.skill-legend li {
+    display: inline;
+}
+
+.skill-grid {
+    justify-content: center;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    text-align: center;
+}
+
+.skill-list {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.skill {
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin: 4px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.skill-frontend {
+    background: #484848;
+    color: white;
+}
+
+
+.skill-frontend:hover {
+    background: whitesmoke;
+    color: #484848;
+    border: solid #484848 1px;
+}
+
+.skill-backend {
+    background: rgb(0, 145, 145);
+    color: white;
+}
+
+
+.skill-backend:hover {
+    background: whitesmoke;
+    color: rgb(0, 145, 145);
+    border: solid rgb(0, 145, 145) 1px;
+}
+
+#skills h2, #work h2 {
+    text-align: center;
+}
+
+.skill-mobile {
+    background: rgb(180, 102, 0);
+    color: white;
+}
+
+
+.skill-mobile:hover {
+    background: whitesmoke;
+    color: rgb(180, 102, 0);
+    border: solid rgb(180, 102, 0) 1px;
+}
+
+.skill-others {
+    background: rgb(23, 79, 233);
+    color: white;
+}
+
+
+.skill-others:hover {
+    background: whitesmoke;
+    color: rgb(23, 79, 233);
+    border: solid rgb(23, 79, 233) 1px;
+}
+
+
+/** WORK **/
+#work {
+    background: white;
+    padding: 8% 4%;
+}
+
+.portfolio-categories {
+    text-align: center;
+}
+
+.work-group {
+    text-align: center
+}
+
+.work-grid {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 30%;
+    margin: 8px;
+    border: solid black 1.5px;
+    height: 220px;
+    background: #dedede;
+    position: relative;
+}
+
+.project-screenshot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.more-coming-soon {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.more-coming-soon p {
+    position: relative;
+    margin: 0;
+    margin-top: 25%;
+}
+
+.project-description {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 16px;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+}
+
+.project-description * {
+    font-size: small;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-me {
+    background: #242424;
+}
+
+#contact-me h1 {
+    text-align:  center;
+}
+#contact-me * {
+    color: white;
+}
+
+.contact-me-content {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    margin: 16px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.contact-form input, .contact-form textarea {
+    margin-bottom: 8px;
+    outline: none;
+    background: #242424;
+    color: white;
+    border: solid 1px rgb(204, 204, 204);
+    padding: 8px;
+    width: 100%;
+}
+
+/** FOOTER */
+#footer {
+    padding: 16px;
+    background: whitesmoke;
+    border-top: solid #dedede 0.5px;
+}
