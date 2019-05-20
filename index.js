@@ -15,7 +15,6 @@ links.forEach(link => {
             return
         }
         section = $(link.replace("nav-link-", ""))
-        //FIXME: This is a temporary solution. Find the best way to do this
         let scrollToY = section.offset().top - $("#nav-bar").height() + 3
         markNavLinkActive(link)
         window.scrollTo(0, scrollToY)
