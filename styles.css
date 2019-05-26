@@ -304,6 +304,11 @@ button:active {
     text-align: center;
 }
 
+.fit-image{
+width: 100%;
+object-fit: cover;
+}
+
 .work-group {
     text-align: center
 }
