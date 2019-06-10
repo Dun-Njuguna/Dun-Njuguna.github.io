@@ -366,11 +366,15 @@ object-fit: cover;
     right: 0;
     left: 0;
     bottom: 0;
-    min-height: 100px;
+    height: 100px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     padding: 16px;
     background: rgba(0, 0, 0, .7);
     position: absolute;
 }
+
+.project-description::-webkit-scrollbar { width: 0 !important }
 
 .project-description * {
     font-size: small;
