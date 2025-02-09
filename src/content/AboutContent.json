@@ -1,0 +1,16 @@
+{
+  "title": "About",
+  "text": "Passionate about building scalable and efficient solutions, I specialize in both software development and DevOps. From crafting modular Flutter applications to managing cloud infrastructure, I bridge the gap between development and operations to drive seamless deployments and system reliability.",
+  "section": [
+    {
+      "title": "Software Development",
+      "content": "Building modular and high-performance applications using Flutter, with a focus on scalability, maintainability, and a smooth user experience.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "DevOps",
+      "content": "Experienced in cloud infrastructure and automation, leveraging AWS, Azure, Kubernetes, Terraform, Grafana, and other tools to optimize deployments, monitoring, and system reliability.",
+      "icon": "notes.svg"
+    }
+  ]
+}
