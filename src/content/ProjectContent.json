@@ -3,8 +3,8 @@
   "data": [
     {
       "project_name": "Form Steward",
-      "description": "A dynamic form builder package that allows you to create and manage multi-step forms in Flutter based on JSON configuration. It supports custom form validation, stepper navigation, and flexible form field types, making it a powerful tool for building complex forms with ease.",
-      "icon": "form_steward.svg",
+      "description": "A dynamic form builder package that allows creating and managing multi-step forms in Flutter based on JSON configuration. It supports custom form validation, stepper navigation, and flexible form field types.",
+      "icon": "form_steward.png",
       "github_url": "https://github.com/Dun-Njuguna/form_steward",
       "modules" : []
     },
