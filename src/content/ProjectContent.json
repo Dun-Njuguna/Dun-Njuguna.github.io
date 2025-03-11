@@ -4,33 +4,41 @@
     {
       "project_name": "Form Steward",
       "description": "A dynamic form builder package that allows creating and managing multi-step forms in Flutter based on JSON configuration. It supports custom form validation, stepper navigation, and flexible form field types.",
-      "icon": "form_steward.png",
+      "images": [
+        "form_steward.png"
+      ],
       "github_url": "https://github.com/Dun-Njuguna/form_steward",
-      "modules" : []
+      "modules": []
     },
     {
       "project_name": "Whisk and Serve",
       "description": "Whisk and Serve is a modular recipe application structured into several modules: whisk_and_serve_core, which includes core features such as user authentication, data models, and shared utilities for seamless operation; whisk_and_serve_explore, which helps users discover new recipes through search, filters, and detailed recipe views; and whisk_and_serve_favourites, which enables users to save and manage their favorite recipes for easy access.",
-      "icon": "Image_not_available.png",
+      "images": [
+        "whiskandserve_1.png",
+        "whiskandserve_2.png",
+        "whiskandserve_3.png",
+        "whiskandserve_4.png",
+        "whiskandserve_5.png",
+        "whiskandserve_6.png"
+      ],
       "modules": [
         {
-          "title":"whisk-and-serve ",
+          "title": "whisk-and-serve ",
           "github_url": "https://github.com/Dun-Njuguna/whisk-and-serve"
         },
         {
-          "title":"whisk_and_serve_core ",
+          "title": "whisk_and_serve_core ",
           "github_url": "https://github.com/Dun-Njuguna/whisk_and_serve_core "
         },
         {
-          "title":"whisk_and_serve_explore",
+          "title": "whisk_and_serve_explore",
           "github_url": "https://github.com/Dun-Njuguna/whisk_and_serve_explore"
         },
         {
-          "title":"whisk_and_serve_favourites",
+          "title": "whisk_and_serve_favourites",
           "github_url": "https://github.com/Dun-Njuguna/whisk_and_serve_favourites"
         }
       ]
     }
   ]
 }
-

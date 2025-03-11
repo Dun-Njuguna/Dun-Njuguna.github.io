@@ -26,7 +26,7 @@ const Home = () => {
           title={IntroContent.title}
           content={IntroContent.text}
           button={IntroContent.button}
-          icon="developer.svg"
+          images={(["developer.svg"])}
           id="intro"
         />
       </FullScreenContainer>
@@ -35,7 +35,7 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        images={(["graphs.svg"])}
         id="about"
       />
       <div>
@@ -50,7 +50,7 @@ const Home = () => {
             content={(project.description)}
             github_url={(project.github_url)}
             modules={(project.modules)}
-            icon={(project.icon)}
+            images={(project.images)}
             id={`projects-${index}`}
           />
         ))}

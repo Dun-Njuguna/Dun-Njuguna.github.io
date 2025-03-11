@@ -15,9 +15,10 @@ import {
   StyledRow,
   ButtonWrapper,
 } from "./styles";
+import ImageCarousel from "../../common/Carousel/image-carousel";
 
 const ContentBlock = ({
-  icon,
+  images,
   title,
   content,
   github_url,
@@ -45,16 +46,17 @@ const ContentBlock = ({
           direction={direction}
         >
           <Col lg={11} md={11} sm={12} xs={24}>
-            <SvgIcon src={icon} width="100%" height="100%" />
+            <ImageCarousel images={images} />
           </Col>
+
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
               <h3>{t(title)}</h3>
               <Content>{t(content)}</Content>
 
 
-{/* Display GitHub links below content */}
-<div>
+              {/* Display GitHub links below content */}
+              <div>
                 {/* Main Project GitHub Link */}
                 {github_url && (
                   <p>
