@@ -51,42 +51,8 @@ const ContentBlock = ({
 
           <Col lg={11} md={11} sm={11} xs={24}>
             <ContentWrapper>
-              <h3>{t(title)}</h3>
+              <MinTitle>{t(title)}</MinTitle>
               <Content>{t(content)}</Content>
-
-
-              {/* Display GitHub links below content */}
-              <div>
-                {/* Main Project GitHub Link */}
-                {github_url && (
-                  <p>
-                    <a
-                      href={github_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {title}
-                    </a>
-                  </p>
-                )}
-
-                {/* Module GitHub Links */}
-                {modules && modules.length > 0 && (
-                  <ul>
-                    {modules.map((module, index) => (
-                      <li key={index}>
-                        <a
-                          href={module.github_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {module.title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
 
               {direction === "right" ? (
                 <ButtonWrapper>

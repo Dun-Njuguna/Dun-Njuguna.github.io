@@ -3,13 +3,25 @@ import { Link } from "react-router-dom";
 import { MenuOutlined } from "@ant-design/icons";
 
 export const HeaderSection = styled("header")`
-  padding: 1rem 0.5rem;
+  // position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  backdrop-filter: blur(12px); /* Smooth glassmorphism blur */
+  justify-content: space-between;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease;
 
   .ant-row-space-between {
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 `;
+
+
+
 
 export const LogoContainer = styled(Link)`
   display: flex;

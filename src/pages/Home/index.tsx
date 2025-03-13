@@ -12,7 +12,7 @@ const Contact = lazy(() => import("../../components/ContactForm"));
 const Container = lazy(() => import("../../common/Container"));
 const ScrollToTop = lazy(() => import("../../common/ScrollToTop"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
-
+const ProjectsBlock = lazy(() => import("../../components/ProjectsBlock"));
 
 
 const Home = () => {
@@ -43,13 +43,13 @@ const Home = () => {
           <h3 id={`projects`}>{t(ProjectContent.title)}</h3>
         </Fade>
         {ProjectContent.data.map((project, index) => (
-          <ContentBlock
+          <ProjectsBlock
             key={index}
             direction={index % 2 === 0 ? "right" : "left"}
             title={(project.project_name)}
             content={(project.description)}
-            github_url={(project.github_url)}
             modules={(project.modules)}
+            technologies={(project.technologies)}
             images={(project.images)}
             id={`projects-${index}`}
           />

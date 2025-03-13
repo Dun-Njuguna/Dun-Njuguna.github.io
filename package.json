@@ -52,6 +52,7 @@
     "@types/antd": "^1.0.4",
     "@types/react-dom": "^19.0.3",
     "@types/react-slick": "^0.23.13",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.7.3"
   }
 }

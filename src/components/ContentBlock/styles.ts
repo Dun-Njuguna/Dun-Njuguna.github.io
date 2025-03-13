@@ -12,13 +12,15 @@ export const ContentSection = styled("section")`
 
 export const Content = styled("p")`
   margin: 1.5rem 0 2rem 0;
+      line-height: 2;
+  color: #555;
 `;
 
 interface StyledRowProps {
   direction?: "left" | "right";
 }
 
-export const StyledRow = styled(Row)<StyledRowProps>`
+export const StyledRow = styled(Row) <StyledRowProps>`
   flex-direction: ${({ direction }) => (direction === "left" ? "row" : "row-reverse")};
 `;
 
@@ -39,15 +41,13 @@ export const ServiceWrapper = styled("div")`
 
 export const MinTitle = styled("h6")`
   font-size: 15px;
-  line-height: 1rem;
-  padding: 0.5rem 0;
-  text-transform: uppercase;
-  color: #000;
-  font-family: "Motiva Sans Light", sans-serif;
+  margin-bottom: 0.5rem;
+  color: #222;
 `;
 
 export const MinPara = styled("p")`
-  font-size: 15px;
+    line-height: 2;
+  color: #555;
 `;
 
 export const ButtonWrapper = styled("div")`
