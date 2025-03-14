@@ -20,14 +20,14 @@ const Home = () => {
   return (
     <Container>
       <ScrollToTop />
-      <FullScreenContainer>
+      <FullScreenContainer id="intro">
         <ContentBlock
           direction="right"
           title={IntroContent.title}
           content={IntroContent.text}
           button={IntroContent.button}
           images={(["developer.svg"])}
-          id="intro"
+          id=""
         />
       </FullScreenContainer>
       <ContentBlock

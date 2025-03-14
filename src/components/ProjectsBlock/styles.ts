@@ -7,11 +7,16 @@ export const ContentSection = styled.section`
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.25rem;
 `;
 
 export const Title = styled.h3`
   margin-bottom: 0.5rem;
+  color: #222;
+`;
+
+export const SubTitle = styled.h4`
+  margin-bottom: 2rem;
   color: #222;
 `;
 
@@ -26,26 +31,33 @@ export const TechWrapper = styled.div`
   gap: 0.75rem;
 `;
 
-export const TechBadge = styled.div`
-  width: 60px;
-  height: 60px;
-  background:rgba(243, 244, 246, 0.15);
-  border-radius: 50%;
+export const TechItem = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(243, 244, 246, 0.5);
+  border-radius: 9999px; /* Fully rounded pill shape */
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: background 0.2s ease;
-
-  img {
-    width: 24px;
-    height: 24px;
-  }
+  cursor: default;
 
   &:hover {
     background: #e5e7eb;
   }
+
+  svg, img {
+    width: 20px;
+    height: 20px;
+  }
 `;
+
+export const TechTitle = styled.span`
+  font-size: 0.875rem; /* Smaller text */
+  color: #374151; /* Neutral gray for text */
+  white-space: nowrap;
+`;
+
 
 export const GitHubLink = styled.a`
   display: inline-block;

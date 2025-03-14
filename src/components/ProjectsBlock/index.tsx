@@ -7,8 +7,10 @@ import {
   ContentSection,
   ContentWrapper,
   Title,
+  SubTitle,
   Description,
-  TechBadge,
+  TechItem,
+  TechTitle,
   TechWrapper,
   GitHubLink,
   ButtonWrapper,
@@ -56,26 +58,28 @@ const ProjectsBlock = ({
             <ContentWrapper>
               <Title>{t(title)}</Title>
               <Description>{t(content)}</Description>
+              <SubTitle>Technologies:</SubTitle>
 
               {/* Tech Stack */}
               {technologies && technologies.length > 0 && (
-                <Col>
-                  <Description>Technologies:</Description>
-                  <TechWrapper>
-                    {technologies.map((tech, index) => (
-                      <Tooltip title={tech.name} key={index}>
-                        <TechBadge>
-                          <SvgIcon src={tech.icon} width="90%" height="60%" />
-                        </TechBadge>
-                      </Tooltip>
-                    ))}
-                  </TechWrapper>
-                </Col>
+
+                <TechWrapper>
+                  {technologies.map((tech, index) => (
+                    <Tooltip title={tech.name} key={index}>
+                      <TechItem>
+                        <SvgIcon src={tech.icon} width="20px" height="20px" />
+                        <TechTitle>{tech.name}</TechTitle>
+                      </TechItem>
+                    </Tooltip>
+                  ))}
+                </TechWrapper>
+
               )}
 
 
               {/* GitHub Links */}
               <GithubRepoWrapper>
+                <SubTitle>Github:</SubTitle>
                 {modules && modules.length > 0 && (
                   <RepoModules>
                     {modules.map((mod, idx) => (
